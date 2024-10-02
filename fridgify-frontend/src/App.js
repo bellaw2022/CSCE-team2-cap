@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Profile from './components/ProfilePage';
 import Statistics from './components/StatisticsPage';
-import ReceiptRecommendation from './components/ReceiptRecommendationPage';
+import RecipeRecommendation from './components/RecipeRecommendationPage';
 import InventoryPage from './components/InventoryPage';
 import ScanningPage from './components/FoodScanningPage';
 
@@ -25,7 +25,7 @@ function App() {
               <Link to="/statistics">Statistics</Link>
             </li>
             <li>
-              <Link to="/receipt-recommendation">Receipt Recommendation</Link>
+              <Link to="/recipe-recommendation">Recipe Recommendation</Link>
             </li>
             <li>
               <Link to="/scanning">Food Scanning</Link> {/* Link for Scanning Page */}
@@ -38,7 +38,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/inventory" element={<InventoryPage />} />
           <Route path="/statistics" element={<Statistics />} />
-          <Route path="/receipt-recommendation" element={<ReceiptRecommendation />} />
+          <Route path="/recipe-recommendation" element={<RecipeRecommendation />} />
           <Route path="/scanning" element={<ScanningPage />} /> 
         </Routes>
       </div>
